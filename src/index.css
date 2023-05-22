@@ -1,13 +1,69 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  font-family: Inter, 'sans-serif';
+}
+body{
+  background-color: antiquewhite;
+}
+main{
+  background-color: #0B2434;
+  max-width: 360px;
+  margin: 30px auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app{
+  margin:0 auto;
+  max-width: 360px;
+  background-color: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.app>h1{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.app>p{
+  font-size: 13px;
+  padding-left: 43px;
+  padding-right: 43px;
+  text-align: center;
+}
+
+.dice-container{
+  display: grid;
+  grid-template: auto auto / repeat(5,1fr);
+  gap:20px; 
+  padding: 20px 20px;
+}
+.die-face{
+  height: 50px;
+  width: 50px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.die-num{
+  font-size: 2rem;
+}
+
+.app>button{
+  background-color: white;
+  border-radius: 4px;
+  border-color: #5035FF;
+  font-size: 17px;
+  color: white;
+  background-color: #5035FF;
+  font-weight: bold;
+  margin: 20px;
+  width: 150px;
+  height: 50px;
 }
